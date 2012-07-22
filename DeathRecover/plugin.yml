@@ -1,0 +1,7 @@
+name: DeathRecover
+version: 1.0
+main: me.NerdsWBNerds.DeathRecover.DeathRecover
+commands:
+   recover:
+      description: Used to recover inventroy after death.
+      usage: /<command>
