@@ -16,6 +16,10 @@ public class DRListener implements Listener {
 	public void onDeath(PlayerDeathEvent e){
 		Player player = e.getEntity();
 
+		if(player.hasPermission("deathrecover.nodeathdrops")){
+			e.getDrops().clear();
+		}
+		
 		if(!player.hasPermission("deathrecover.recover"))
 			return;
 		
